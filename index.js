@@ -4,16 +4,16 @@ const CIPHER = 'oephjizkxdawubnytvfglqsrcm';
 module.exports = function atbash(text, encrypt = false) {
   let result = '';
 
-  const TOTEXT = encrypt ? CIPHER : ALPHABET;
-  const FROMTEXT = encrypt ? ALPHABET : CIPHER;
+  const toText = encrypt ? CIPHER : ALPHABET;
+  const fromText = encrypt ? ALPHABET : CIPHER;
 
   for (let i = 0, leng = text.length; i < leng; i++) {
-    const letterIndex = FROMTEXT.indexOf(text[i].toLowerCase());
+    const letterIndex = fromText.indexOf(text[i].toLowerCase());
     if (letterIndex === -1) {
       result += text[i];
       continue;
     }
-    result += TOTEXT[letterIndex];
+    result += toText[letterIndex];
   }
 
   return result;

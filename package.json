@@ -1,7 +1,8 @@
 {
   "name": "atbash",
   "version": "0.0.1",
-  "description": "Atbash is a simple substitution cipher possible with any known alphabet. It emerged around 500-600 BCE. It works by substituting the letters of an alphabet with another.",
+  "description":
+    "Atbash is a simple substitution cipher possible with any known alphabet. It emerged around 500-600 BCE. It works by substituting the letters of an alphabet with another.",
   "main": "index.js",
   "scripts": {
     "test": "mocha test"
@@ -10,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/goriunov/atbash.git"
   },
-  "author": "",
+  "author": "Dmitrii Goriunov",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.1.2",
