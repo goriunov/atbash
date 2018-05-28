@@ -18,9 +18,12 @@ module.exports = function atbash(text, encrypt = false) {
   // }
 
   // version 2
-  for (let i = 0, leng = text.length; i < leng; i++) {
-    result += toText[fromText.indexOf(text[i].toLowerCase())] || text[i];
-  }
+  // for (let i = 0, leng = text.length; i < leng; i++) {
+  //   result += toText[fromText.indexOf(text[i].toLowerCase())] || text[i];
+  // }
+
+  // Version 3
+  for (let letter of text) result += toText[fromText.indexOf(letter.toLowerCase())] || letter;
 
   return result;
-};
+}
